@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Документ</title>
+</head>
+<body>
+	<div style="float: center;">
+		<h1>Введите число</h1>
+		<textarea id="Number"></textarea>
+		<button id="Input">Ввод</button>
+		<h2>Вывод суммы нечетных чисел меньше данного числа</h2>
+		<button id="Sum">Нажать</button>
+	</div>
+	<script type="text/javascript"> 
+		 let arr = 0
+         let number = 0;
+         let Summ = 0
+         document.getElementById(`Input`).onclick = function() {
+         	arr = document.getElementById(`Number`).value
+         } 
+         
+         document.getElementById(`Sum`).onclick = function() {
+         	for(let j = 1; j < arr; j += 2){
+         	Summ = Summ + j 
+         }
+            console.log(Summ)
+         
+	</script>
+</body>
+</html>
